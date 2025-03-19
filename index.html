@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #000000;
+        }
+        .round {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+        }
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: #31ff22;
+            border-radius: 50%;
+            /* position: absolute; */
+            border: 5px solid #000000;
+        }
+        .ball1 {
+            animation: spring1 2s linear infinite;
+            
+            background-color: rgb(51, 255, 0);
+            z-index: 10;
+        }
+        .ball2 {
+            animation-delay: 1s;
+            animation: spring2 2s linear infinite;
+            animation-delay: .5s;
+            background-color: yellow;
+            z-index: 8;
+        }
+        .ball3 {
+            animation-delay: 1.5s;
+            animation: spring3 2s linear infinite;
+            animation-delay: 1s;
+            background-color: orange;
+            z-index: 6;
+
+        }
+        .ball4 {
+            animation-delay: 2s;
+            animation: spring4 2s linear infinite;
+            animation-delay: 1.5s;
+            background-color: indigo;
+            z-index: 4;
+        }
+        .ball5 {
+            animation-delay: 2.5s;
+            animation: spring5 2s linear infinite;
+            animation-delay: 2s;
+            background-color: olivedrab;
+            z-index: 2;
+        }
+        @keyframes spring1 {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: .9;
+            }
+            20% {
+                opacity: .8;
+            }
+            30% {
+                opacity: .7;
+            }
+            40% {
+                opacity: .6;
+            }
+            50% {
+                opacity: .5;
+            }
+            60% {
+                opacity: .4;
+            }
+            70% {
+                opacity: .3;
+            }
+            80% {
+                opacity: .2;
+            }
+            90% {
+                opacity: .1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes spring2 {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: .9;
+            }
+            20% {
+                opacity: .8;
+            }
+            30% {
+                opacity: .7;
+            }
+            40% {
+                opacity: .6;
+            }
+            50% {
+                opacity: .5;
+            }
+            60% {
+                opacity: .4;
+            }
+            70% {
+                opacity: .3;
+            }
+            80% {
+                opacity: .2;
+            }
+            90% {
+                opacity: .1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes spring3 {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: .9;
+            }
+            20% {
+                opacity: .8;
+            }
+            30% {
+                opacity: .7;
+            }
+            40% {
+                opacity: .6;
+            }
+            50% {
+                opacity: .5;
+            }
+            60% {
+                opacity: .4;
+            }
+            70% {
+                opacity: .3;
+            }
+            80% {
+                opacity: .2;
+            }
+            90% {
+                opacity: .1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes spring4 {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: .9;
+            }
+            20% {
+                opacity: .8;
+            }
+            30% {
+                opacity: .7;
+            }
+            40% {
+                opacity: .6;
+            }
+            50% {
+                opacity: .5;
+            }
+            60% {
+                opacity: .4;
+            }
+            70% {
+                opacity: .3;
+            }
+            80% {
+                opacity: .2;
+            }
+            90% {
+                opacity: .1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes spring5 {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: .9;
+            }
+            20% {
+                opacity: .8;
+            }
+            30% {
+                opacity: .7;
+            }
+            40% {
+                opacity: .6;
+            }
+            50% {
+                opacity: .5;
+            }
+            60% {
+                opacity: .4;
+            }
+            70% {
+                opacity: .3;
+            }
+            80% {
+                opacity: .2;
+            }
+            90% {
+                opacity: .1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="round">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+        <div class="ball ball4"></div>
+        <div class="ball ball5"></div>
+    </div>
+</body>
+</html>
